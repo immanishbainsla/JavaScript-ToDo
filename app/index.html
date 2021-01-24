@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>JavaScript Session - To-Do</title>
+</head>
+<body class="center">
+    <header id="top" class="">
+        <div class="header">To-Do's</div>
+    </header>
+    <main id="center">
+
+        <form>
+            <input type="text" placeholder="Create new task" class="todo_input BorderRadius" /> 
+            <button class="todo_button BorderRadius" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+                <select name="todos" class="filter_todo">
+                    <option value="all" selected>Show All</option>
+                    <option value="completed">Show Finished</option>
+                    <option value="uncompleted">Show Unfinished</option>
+                </select>
+            </div>
+        </form>
+        <!-- container for task List -->
+        <div class="todo_container">
+            <ul class="todo_list"></ul>
+        </div>
+
+    </main>
+    <footer class="bottom">
+        <div class="footer center">Made by : Manish Bainsla (<a href="https://github.com/immanishbainsla">GitHub</a>)</div>
+        <!-- reference : <a href="https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033">medium</a> -->
+    </footer>
+
+        <!-- my script -->
+        <script src="./script.js"></script>
+</body>
+</html>
